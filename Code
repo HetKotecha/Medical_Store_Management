@@ -1,0 +1,198 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char choice,nm[60][60],lom,nc[60],dt[30] ;
+int n;
+float pr[30],tot,gst,gt,cgst;
+int i=0;
+char uname[60],c=' ';
+char pword[60];
+char pass[60]="GMSINC";
+printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+printf(" \n\n\n Enter Your Name : ");
+scanf("%s", &uname);
+printf(" \n Enter Employee Code : ");
+while(i<25)
+{
+   pword[i]=getch();
+   c=pword[i];
+   if(c==13) break;
+   else printf("*");
+   i++;
+}
+pword[i]='\0';
+if( strcmp(pword,"GMSINC")==0)
+{
+printf("\n\n\n Login Successful :-) ");
+getch();
+system("cls");
+while(1)
+{
+getch();
+system("cls");
+printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+printf("\n\n Please Proceed Further Mr/Mrs. %s",uname);
+printf("\n\n\n\t1.Location of Medicine");
+printf("\n\t2.Create a Bill");
+printf("\n\t3.Exit");
+getch();
+printf("\n\n\tEnter your Choice : ");
+scanf(" %c",&choice);
+
+ switch(choice)
+ {
+
+ case'1': system("cls");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+          printf("\n\n\t1. General Medicine");
+          printf("\n\t2. Antibiotics");
+          printf("\n\t3. Capsules");
+          getch();
+          printf("\n\n\tEnter your Choice : ");
+          scanf(" %c",&lom);
+          break;
+
+ }
+
+ switch(lom)
+ {
+
+ case'1' : system("cls");
+           printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+           printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+           printf("\n\n\tGeneral Medicines");
+           printf("\n\t-----------------");
+           printf("\n\n\t1.Synthroid\n\n\tRack 1\n\tDrawer 1");
+           printf("\n\n\t2.Crestor\n\n\tRack 1\n\tDrawer 2");
+           printf("\n\n\t3.Ventolin\n\n\tRack 1\n\tDrawer 3");
+           printf("\n\n\t4.Nexium\n\n\tRack 1\n\tDrawer 4");
+           printf("\n\n\t5.Advair Diskus\n\n\tRack 1\n\tDrawer 5");
+           printf("\n\n\t6.Lantus Solostar\n\n\tRack 2\n\tDrawer 1");
+           printf("\n\n\t7.Vyvanse\n\n\tRack 2\n\tDrawer 2");
+           printf("\n\n\t8.Lyrica\n\n\tRack 2\n\tDrawer 3");
+           printf("\n\n\t9.Spiriva\n\n\tRack 2\n\tDrawer 4");
+           printf("\n\n\t10.Januvia\n\n\tRack 2\n\tDrawer 5\n\n\n\n");
+           
+          
+		   break;
+
+ case'2': system("cls");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+ 	      printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+	 	  printf("\n\n\tAntibiotics");
+          printf("\n\t-----------");
+          printf("\n\n\t1.Amoxicillin\n\n\tRack 3\n\tDrawer 1");
+          printf("\n\n\t2.Doxycycline\n\n\tRack 3\n\tDrawer 2");
+          printf("\n\n\t3.Clindamycin\n\n\tRack 3\n\tDrawer 3");
+          printf("\n\n\t4.Amoxil\n\n\tRack 3\n\tDrawer 4");
+          printf("\n\n\t5.Keflex\n\n\tRack 3\n\tDrawer 5");
+          printf("\n\n\t6.Cipro\n\n\tRack 4\n\tDrawer 1");
+          printf("\n\n\t7.Levaquin\n\n\tRack 4\n\tDrawer 2");
+          printf("\n\n\t8.Avelox\n\n\tRack 4\n\tDrawer 3");
+          printf("\n\n\t9.Augmentin\n\n\tRack 4\n\tDrawer 4");
+          printf("\n\n\t10.Cleocin\n\n\tRack 4\n\tDrawer 5\n\n\n\n");
+          
+	     
+          break;
+
+ case'3': system("cls");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+		  printf("\n\n\tCapsules");
+          printf("\n\t--------");
+          printf("\n\n\t1.Aceclofenac\n\n\tRack 5\n\tDrawer 1");
+          printf("\n\n\t2.Apretero\n\n\tRack 5\n\tDrawer 2");
+          printf("\n\n\t3.Delzole-200\n\n\tRack 5\n\tDrawer 3");
+          printf("\n\n\t4.Trisomil-DSR\n\n\tRack 5\n\tDrawer 4");
+          printf("\n\n\t5.Omega-3\n\n\tRack 5\n\tDrawer 5");
+          printf("\n\n\t6.Roliflo OD-2\n\n\tRack 6\n\tDrawer 1");
+          printf("\n\n\t7.Simeprevir\n\n\tRack 6\n\tDrawer 2");
+          printf("\n\n\t8.Fluconazole\n\n\tRack 6\n\tDrawer 3");
+          printf("\n\n\t9.Cefadroxil\n\n\tRack 6\n\tDrawer 4");
+          printf("\n\n\t10.Pancreatin Lupase\n\n\tRack 6\n\tDrawer 5\n\n\n\n");
+          
+	      
+          break;
+
+ }
+switch(choice)
+{
+ 	
+case'2': system("cls");
+         printf("\n\t\t\t\t\t\t\t\t\t\t\t      GOVERNMENT MEDICAL STORE ");
+         printf("\n\t\t\t\t\t\t\t\t\t\t\t      ------------------------");
+         printf("\n\n\tEnter the Name of Customer : ");
+         scanf("%s",nc);
+         printf("\n\tEnter today's Date : ");
+         scanf("%s",&dt);
+         printf("\n\tEnter the Quantity of Medicines Needs to Purchase : ");
+         scanf("%d",&n);
+         for(i=0;i<n;i++)
+         {
+         printf("\n\tEnter the Name of Medicine : ");
+         scanf("%s",nm+i);
+         printf("\tEnter the Price of Medicine : ");
+         scanf("%f",&pr[i]);
+         printf("\n");
+         }
+
+printf("\n\n\t==================== GOVERNMENT MEDICAL STORE ====================\n\n");
+printf("\tInvoice to : Mr/Mrs. %s\n",nc);
+printf("\n\tDate : %s\n",dt);
+printf("\t------------------------------------------------------------------");
+printf("\n\n\tItem\t\t\t\tQty\t\t\t  Total");
+printf("\n\t------------------------------------------------------------------\n");
+for(i=0;i<n;i++)
+{
+  printf("\n");
+  printf("\n\t%s",nm+i);
+  printf("\t\t\t\t1");
+  printf("\t\t\t  %.2f",pr[i]);
+}
+printf("\n\t------------------------------------------------------------------\n");
+printf("\n\tTotal Qty\t\t\t%d",n);
+printf("\n\t------------------------------------------------------------------\n");
+if(n<=n)
+{
+for(i=0;i<n;i++)
+{
+tot=tot+pr[i];
+}
+}
+gst=((tot/100)*18);
+cgst=((tot/100)*9);
+gt=tot+gst;
+printf("\n\n\tSub Total\t\t\t\t\t\t  %.2f",tot);
+printf("\n\t\t\t\t\t\t\t\t  ------");
+printf("\n\tCGST @9 \t\t\t\t\t\t  %.2f",cgst);
+printf("\n\tSGST @9 \t\t\t\t\t\t  %.2f",cgst);
+printf("\n\t------------------------------------------------------------------\n");
+printf("\n\tGrand Total");
+printf("\t\t\t\t\t\t  %.2f",gt);
+printf("\n\t------------------------------------------------------------------\n\n\n\n");
+break; 
+    }
+  
+switch(choice)
+{
+case '3': system("cls");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t   GOVERNMENT MEDICAL STORE ");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t   ------------------------");
+          printf("\n\t\t\t\t\t\t\t\t\t\t\t	");
+          printf("\n\n\n\nProcess Completed Succesfully Mr/Mrs. %s\n\n",uname); 
+		  printf("Press any key to Escape\n\n\n");
+          exit(0);
+}
+}
+}
+ else
+  {
+  printf("\n\n\n Error! Code is Incorrect :-(\n\n");
+  }
+ 
+}
+
